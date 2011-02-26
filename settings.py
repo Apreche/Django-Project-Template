@@ -97,8 +97,13 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django_extensions',
-    'south',
 )
+
+try:
+    from local_apps import EXTRA_APPS
+    INSTALLED_APPS += EXTRA APPS
+except ImportError:
+    pass
 
 try:
     from local_settings import *
