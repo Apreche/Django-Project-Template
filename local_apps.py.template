@@ -1,4 +1,4 @@
 EXTRA_APPS = (
     'south',
-    #'debug_toolbar',
+    'debug_toolbar',
 )

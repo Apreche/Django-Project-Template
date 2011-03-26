@@ -16,5 +16,5 @@ for item in list(sys.path):
 sys.path[:0] = new_sys_path
 
 from django.core.handlers.wsgi import WSGIHandler
-os.environ["DJANGO_SETTINGS_MODULE"] = 'yummy.settings'
+os.environ["DJANGO_SETTINGS_MODULE"] = 'projectname.settings'
 application = WSGIHandler()
